@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21A8CFE2707DEB8009BAF7C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A8CFD2707DEB8009BAF7C /* AlarmView.swift */; };
+		F21A8D00270BD98D009BAF7C /* SetAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A8CFF270BD98D009BAF7C /* SetAlarmView.swift */; };
+		F244B89F2707D42600BDC3A2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B89E2707D42600BDC3A2 /* RowView.swift */; };
+		F244B8A12707D7B300BDC3A2 /* CryptoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F244B8A02707D7B300BDC3A2 /* CryptoListView.swift */; };
 		F25AA6A926FEA37B009B0405 /* CryptoAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25AA6A826FEA37B009B0405 /* CryptoAlarmApp.swift */; };
 		F25AA6AB26FEA37B009B0405 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25AA6AA26FEA37B009B0405 /* ContentView.swift */; };
 		F25AA6AD26FEA37C009B0405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25AA6AC26FEA37C009B0405 /* Assets.xcassets */; };
 		F25AA6B026FEA37C009B0405 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25AA6AF26FEA37C009B0405 /* Preview Assets.xcassets */; };
+		F27138B7270523DA006FDBBD /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27138B6270523DA006FDBBD /* CryptoModel.swift */; };
+		F282181527060BDD001BE890 /* CryptoNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282181427060BDD001BE890 /* CryptoNetwork.swift */; };
+		F282181727061B99001BE890 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F282181627061B99001BE890 /* Encoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21A8CFD2707DEB8009BAF7C /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		F21A8CFF270BD98D009BAF7C /* SetAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAlarmView.swift; sourceTree = "<group>"; };
+		F244B89E2707D42600BDC3A2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		F244B8A02707D7B300BDC3A2 /* CryptoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListView.swift; sourceTree = "<group>"; };
 		F25AA6A526FEA37B009B0405 /* CryptoAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25AA6A826FEA37B009B0405 /* CryptoAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAlarmApp.swift; sourceTree = "<group>"; };
 		F25AA6AA26FEA37B009B0405 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F25AA6AC26FEA37C009B0405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25AA6AF26FEA37C009B0405 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F27138B6270523DA006FDBBD /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		F282181427060BDD001BE890 /* CryptoNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNetwork.swift; sourceTree = "<group>"; };
+		F282181627061B99001BE890 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F244B8A22707D7C700BDC3A2 /* Sub Views */ = {
+			isa = PBXGroup;
+			children = (
+				F244B89E2707D42600BDC3A2 /* RowView.swift */,
+				F21A8CFD2707DEB8009BAF7C /* AlarmView.swift */,
+			);
+			path = "Sub Views";
+			sourceTree = "<group>";
+		};
 		F25AA69C26FEA37B009B0405 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +75,9 @@
 			isa = PBXGroup;
 			children = (
 				F25AA6A826FEA37B009B0405 /* CryptoAlarmApp.swift */,
-				F25AA6AA26FEA37B009B0405 /* ContentView.swift */,
+				F27138B8270523F2006FDBBD /* Networking */,
+				F27138B5270523BE006FDBBD /* Model */,
+				F27138B4270523A6006FDBBD /* View */,
 				F25AA6AC26FEA37C009B0405 /* Assets.xcassets */,
 				F25AA6AE26FEA37C009B0405 /* Preview Content */,
 			);
@@ -65,6 +90,34 @@
 				F25AA6AF26FEA37C009B0405 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F27138B4270523A6006FDBBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F244B8A22707D7C700BDC3A2 /* Sub Views */,
+				F25AA6AA26FEA37B009B0405 /* ContentView.swift */,
+				F244B8A02707D7B300BDC3A2 /* CryptoListView.swift */,
+				F21A8CFF270BD98D009BAF7C /* SetAlarmView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F27138B5270523BE006FDBBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F27138B6270523DA006FDBBD /* CryptoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F27138B8270523F2006FDBBD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F282181427060BDD001BE890 /* CryptoNetwork.swift */,
+				F282181627061B99001BE890 /* Encoder.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27138B7270523DA006FDBBD /* CryptoModel.swift in Sources */,
+				F244B8A12707D7B300BDC3A2 /* CryptoListView.swift in Sources */,
+				F21A8CFE2707DEB8009BAF7C /* AlarmView.swift in Sources */,
 				F25AA6AB26FEA37B009B0405 /* ContentView.swift in Sources */,
+				F282181727061B99001BE890 /* Encoder.swift in Sources */,
 				F25AA6A926FEA37B009B0405 /* CryptoAlarmApp.swift in Sources */,
+				F244B89F2707D42600BDC3A2 /* RowView.swift in Sources */,
+				F282181527060BDD001BE890 /* CryptoNetwork.swift in Sources */,
+				F21A8D00270BD98D009BAF7C /* SetAlarmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
